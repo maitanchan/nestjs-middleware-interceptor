@@ -9,9 +9,7 @@ import { HttpExceptionFilter } from '../filters/http-exception.filter';
 
 @Module({
 
-  controllers: [
-    UserController
-  ],
+  controllers: [UserController],
 
   providers: [
 
@@ -38,12 +36,9 @@ import { HttpExceptionFilter } from '../filters/http-exception.filter';
       useClass: HttpExceptionFilter
     }
 
-
   ],
 
-  exports: [
-    UserService
-  ]
+  exports: [UserService]
 
 })
 export class UserModule { }
